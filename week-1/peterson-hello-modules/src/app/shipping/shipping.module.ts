@@ -6,6 +6,7 @@ import { ShippingComponent } from './shipping.component';
   imports: [
     CommonModule
   ],
-  declarations: [ShippingComponent]
+  declarations: [ShippingComponent],
+  exports: [ShippingComponent]
 })
 export class ShippingModule { }

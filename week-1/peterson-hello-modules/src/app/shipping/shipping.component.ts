@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-shipping',
   template: `
     <p>
-      This is the Shipping Template in shipping.components.ts
+      Welcome from the ShippingComponent
     </p>
   `,
   styles: []
