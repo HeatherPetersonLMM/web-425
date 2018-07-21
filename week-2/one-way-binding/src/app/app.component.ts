@@ -10,9 +10,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  name:string = 'Heather Peterson';
+  name: string = 'Heather Peterson';
 
   changeName() {
-    this.name = 'Heather Peterson';
+    this.name = 'Peterson, Heather';
   }
 }
