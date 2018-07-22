@@ -3,11 +3,21 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-about',
   template: `
-    <p>
-      about works!
-    </p>
+    <div class="container">
+      <div class="row">
+        <h2>Welcome to the About Page!</h2>
+      </div>
+    </div>
   `,
-  styles: []
+  styles: [`
+    .container {
+      margin-top: 20px;
+    }
+    h2 {
+      color: red;
+    }
+    `
+  ]
 })
 export class AboutComponent implements OnInit {
 
