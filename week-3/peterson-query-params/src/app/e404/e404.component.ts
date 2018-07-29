@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: [`
     .container {
-      margin-top: 20px
+      margin-top: 20px;
     }
     h2 {
       color: red;
