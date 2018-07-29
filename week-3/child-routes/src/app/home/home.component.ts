@@ -4,10 +4,15 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   template: `
     <p>
-      home works!
+      This is the homepage and it works!
     </p>
   `,
-  styles: []
+  styles: [ `
+    .home {
+      background-color: cyan;
+    }
+    `
+  ]
 })
 export class HomeComponent implements OnInit {
 
