@@ -7,10 +7,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import {ReactiveFormsModule} from "@angular/forms";
-import {UnsavedChangesGuard} from "./unsaved-changes.guard";
-import {LoginGuard} from "./login.guard";
-import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import {ReactiveFormsModule} from '@angular/forms';
+import {UnsavedChangesGuard} from './unsaved-changes.guard';
+import {LoginGuard} from './login.guard';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 @NgModule({

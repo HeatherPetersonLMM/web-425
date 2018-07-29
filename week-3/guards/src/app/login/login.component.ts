@@ -1,18 +1,33 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
-  selector: 'home',
+  selector: 'app-user',
   template: `
-    <h1 class="home">Please login here</h1>
+    <div class="container">
+      <div class="row">
+        <h2>User Detail for User: {{ userId }}</h2>
+      </div>
+    </div>
   `,
-  styles: [`
-    .home { background-color: greenyellow; }
+  styles: [ `
+    .container {
+      margin-top: 20px;
+    }
+    h2 {
+      color: darkorange;
+    }
   `]
 })
-export class LoginComponent implements OnInit {
+export class UserComponent implements OnInit {
+  userId: string;
 
-  constructor() { }
+  constructor(route: ActivatedRoute) {
+    this.userId = route.snapshot.paramMap.get('id');
+  }
 
   ngOnInit() {
   }
+
 }
+

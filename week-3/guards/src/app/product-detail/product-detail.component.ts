@@ -1,23 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
-  selector: 'product-detail',
+  selector: 'app-user',
   template: `
-    <h1 class="product">Product Detail Component</h1>
-    <input placeholder="Enter your name" type="text" [formControl]="name">
+    <div class="container">
+      <div class="row">
+        <h2>User Detail for User: {{ userId }}</h2>
+      </div>
+    </div>
   `,
   styles: [ `
-    .product { backgorund-color: cyan;}
+    .container {
+      margin-top: 20px;
+    }
+    h2 {
+      color: darkorange;
+    }
   `]
 })
-export class ProductDetailComponent implements OnInit {
+export class UserComponent implements OnInit {
+  userId: string;
 
-  name: FormControl = new FormControl();
-
-  constructor() { }
+  constructor(route: ActivatedRoute) {
+    this.userId = route.snapshot.paramMap.get('id');
+  }
 
   ngOnInit() {
   }
 
 }
+
+

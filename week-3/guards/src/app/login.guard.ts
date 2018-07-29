@@ -1,5 +1,5 @@
-import { CanActivate, Router} from "@angular/router";
-import { Injectable } from "@angular/core";
+import { CanActivate, Router} from '@angular/router';
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class LoginGuard implements CanActivate {
@@ -10,8 +10,8 @@ export class LoginGuard implements CanActivate {
     let loggedIn = Math.random() < 0.5;
 
     if (!loggedIn) {
-      alert("You're not logged in and will be redirected to Login page");
-      this.router.navigate(["/login"]);
+      alert('You are not logged in and will be redirected to Login page');
+      this.router.navigate(['/login']);
     }
 
     return loggedIn;
