@@ -4,7 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-seller-info',
   template: `
-    The seller is Mary Lou, id {{ sellerID }}
+    The seller is Heather Peterson, id {{ sellerID }}
   `,
   styles: [ `
     :host { background: yellow;}
