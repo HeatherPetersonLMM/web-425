@@ -3,11 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-  <h1 class="product">Home Component</h1>
-  <input placeholder="Heather Peterson" type="text" [formControl] = "name">
+  <h1 class="home">Home Component</h1>
 `,
 styles: [ `
-  .product { background-color: cyan;}
+  .home { background-color: red;}
 `
 ]
 })
