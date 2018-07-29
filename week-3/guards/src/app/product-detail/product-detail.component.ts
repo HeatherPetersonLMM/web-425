@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 
 @Component({
-  selector: 'app-user',
+  selector: 'app-productdetail',
   template: `
     <div class="container">
       <div class="row">
-        <h2>User Detail for User: {{ userId }}</h2>
+        <h2>Welcome to the Home Page!</h2>
       </div>
     </div>
   `,
@@ -15,20 +14,16 @@ import {ActivatedRoute} from '@angular/router';
       margin-top: 20px;
     }
     h2 {
-      color: darkorange;
+      color: steelblue;
     }
-  `]
+  `
+  ]
 })
-export class UserComponent implements OnInit {
-  userId: string;
+export class ProductDetailComponent implements OnInit {
 
-  constructor(route: ActivatedRoute) {
-    this.userId = route.snapshot.paramMap.get('id');
-  }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-}
+  }}
 
 

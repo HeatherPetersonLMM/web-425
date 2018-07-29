@@ -1,33 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 
 @Component({
-  selector: 'app-user',
+  selector: 'app-home',
   template: `
-    <div class="container">
-      <div class="row">
-        <h2>User Detail for User: {{ userId }}</h2>
-      </div>
-    </div>
-  `,
-  styles: [ `
-    .container {
-      margin-top: 20px;
-    }
-    h2 {
-      color: darkorange;
-    }
-  `]
+  <h1 class="product">Home Component</h1>
+  <input placeholder="Heather Petreson" type="text" [formControl] = "name">
+`,
+styles: [ `
+  .product { background-color: cyan;}
+`
+]
 })
-export class UserComponent implements OnInit {
-  userId: string;
+export class HomeComponent implements OnInit {
 
-  constructor(route: ActivatedRoute) {
-    this.userId = route.snapshot.paramMap.get('id');
-  }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-}
+  }}
 
