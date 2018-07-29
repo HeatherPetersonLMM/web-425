@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-login',
   template: `
   <h1 class="product">Login Component</h1>
-  <input placeholder="Heather Petreson" type="text" [formControl] = "name">
+  <input placeholder="Heather Peterson" type="text" [formControl] = "name">
 `,
 styles: [ `
   .product { background-color: cyan;}

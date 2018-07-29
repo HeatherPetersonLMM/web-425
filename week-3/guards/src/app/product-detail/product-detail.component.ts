@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-productdetail',
+  selector: 'app-product-detail',
   template: `
     <h1 class="product">Product Detail Component</h1>
-    <input placeholder="Heather Petreson" type="text" [formControl] = "name">
+    <input placeholder="Heather Peterson" type="text" [formControl] = "name">
   `,
   styles: [ `
     .product { background-color: cyan;}
