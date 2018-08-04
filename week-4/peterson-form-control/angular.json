@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "form-control": {
+    "howard-form-control": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/form-control",
+            "outputPath": "dist/peterson-form-control",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "form-control:build"
+            "browserTarget": "peterson-form-control:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "form-control:build:production"
+              "browserTarget": "peterson-form-control:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "form-control:build"
+            "browserTarget": "peterson-form-control:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "form-control-e2e": {
+    "howard-form-control-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "form-control:serve"
+            "devServerTarget": "peterson-form-control:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "form-control:serve:production"
+              "devServerTarget": "peterson-form-control:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "form-control"
+  "defaultProject": "peterson-form-control"
 }
