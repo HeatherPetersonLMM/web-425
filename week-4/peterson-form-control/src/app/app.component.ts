@@ -5,7 +5,7 @@ import {FormControl} from '@angular/forms';
 @Component({
   selector: 'app-root',
   template: `
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <ul class="navbar-nav">
         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
@@ -39,6 +39,14 @@ import {FormControl} from '@angular/forms';
   styles: [`
     .txt-bold {
       font-weight: bold;
+      text-align: center;
+      background-color: #32CD32;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #006400
+    }
+    .container {
+      text-align: center;
     }
   `]
 })
