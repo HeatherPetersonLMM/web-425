@@ -6,21 +6,20 @@ import { FruitService } from './fruit.service';
   template: `
   <div class="container">
       <div class="row">
-        <h2>User Details</h2>
+        <h2>Fruit Details</h2>
         <table class="table table-hover table-striped">
           <thead class="tbl-header">
             <tr>
               <th>ID</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Address</th>
+              <th>Name</th>
+              <th>Color</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>{{ fruit.id }}</td>
-              <td>{{ fruit.name }}</td>
-              <td>{{ fruit.color }}</td>
+              <td>{{ Fruit.id }}</td>
+              <td>{{ Fruit.name }}</td>
+              <td>{{ Fruit.color }}</td>
             </tr>
           </tbody>
         </table>
@@ -29,7 +28,7 @@ import { FruitService } from './fruit.service';
   `,
   styles: [`
     .tbl-header {
-      background-color: steelblue;
+      background-color: coral;
       color: white;
     }
   `],
@@ -37,7 +36,6 @@ import { FruitService } from './fruit.service';
 })
 export class FruitComponent implements OnInit {
 
-  constructor() { }
 
   ngOnInit() {
   }

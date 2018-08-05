@@ -6,7 +6,5 @@ import { Fruit } from './fruit';
 })
 export class FruitService {
   getFruit(): Fruit {
-    return new Fruit(2011, 'Yellow', 'Bananas', 'Giant Eagle, Pittsburgh PA');
-  }
-  constructor() { }
-}
+    return new Fruit(2011, 'Banana', 'Yellow');
+  }}
