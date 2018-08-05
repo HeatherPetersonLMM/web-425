@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Fruit } from './fruit';
+import {Fruit} from './fruit';
 import {Observable} from 'rxjs';
 import { of } from 'rxjs';
 
