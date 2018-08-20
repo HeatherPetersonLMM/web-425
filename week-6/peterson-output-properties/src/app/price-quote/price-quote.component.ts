@@ -7,12 +7,12 @@ import {interval} from 'rxjs/index';
   template: `
    <strong>
      Inside PriceQuoteComponent
-     {{ priceQuote?.stockSymbol }}
-     {{ priceQuote?.lastPrice | currency: 'USD' }}
+     {{priceQuote?.stockSymbol}}
+     {{priceQuote?.lastPrice | currency: 'USD'}}
    </strong>
   `,
   styles: [`
-    :host { background-color: pink; }
+    :host { background-color: lightblue; }
   `]
 })
 export class PriceQuoteComponent implements OnInit {
@@ -31,7 +31,7 @@ export class PriceQuoteComponent implements OnInit {
 
         this.lastPrice.emit(this.priceQuote);
       });
-  }
+}
 
   ngOnInit() {
   }

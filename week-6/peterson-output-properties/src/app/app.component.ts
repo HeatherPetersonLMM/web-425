@@ -1,4 +1,6 @@
+
 import { Component } from '@angular/core';
+import {PriceQuote} from './price-quote/iprice.quote';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'peterson-output-properties';
+  title = 'PetersonOutputExercise';
+  priceQuote: PriceQuote;
+  priceQuoteHandler(event: PriceQuote) {
+    this.priceQuote = event;
+  }
 }

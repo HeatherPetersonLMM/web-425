@@ -1,5 +1,5 @@
 
 export interface PriceQuote {
-    stockSymbol: string;
-    lastPrice: number;
-  }
+  stockSymbol: string;
+  lastPrice: number;
+}
