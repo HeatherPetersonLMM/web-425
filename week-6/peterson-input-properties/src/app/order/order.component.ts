@@ -1,19 +1,16 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-order',
   template: `
-    <span *ngIf="!!stockSymbol">Buying {{quantity}} shares of {{stockSymbol}}</span>
+    <h4 *ngIf="!!stockSymbol">Buying {{quantity}} shares of {{stockSymbol}}</h4>
   `,
   styles: [`
-    :host { background: cyan; }
   `]
 })
 export class OrderComponent implements OnInit {
-
   @Input() quantity: number;
   @Input() stockSymbol: string;
-
   constructor() { }
 
   ngOnInit() {

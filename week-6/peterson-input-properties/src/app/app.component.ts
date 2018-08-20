@@ -7,11 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Peterson Input Properties';
-
   stock: string;
   readonly numberOfShares = 100;
 
-  onChangeEvent ({ target }): void {
+  onChangeEvent({ target }): void {
     this.stock = target.value;
   }
 }

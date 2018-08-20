@@ -1,50 +1,58 @@
 <mat-toolbar class="menu" role="header" color="primary">
-    <mat-toolbar-row>
-      <button mat-button class="toolbar__icon-button mat-button">
-        <mat-icon>web</mat-icon>
-        <span style="margin-left: 5px !important;">WEB 425</span>
+  <mat-toolbar-row>
+      <a mat-button class="toolbar__icon-button mat-button">
+          <mat-icon>web</mat-icon>
+          <span style="margin-left: 5px !important;">Stock</span>
+      </a>
+      <button mat-button class="mat-button">
+          About
       </button>
       <button mat-button class="mat-button">
-        About
-      </button>
-      <button mat-button class="mat-button">
-        Contact Us
+          Login
       </button>
       <div fxFlex></div>
       <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
-        <mat-icon>account_circle</mat-icon>
+          <mat-icon>account_circle</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <mat-icon>perm_contact_calendar</mat-icon>
-          <span>My Profile</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>settings</mat-icon>
-          <span>Settings</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>exit_to_app</mat-icon>
-          <span>Logout</span>
-        </button>
+          <button mat-menu-item>
+              <mat-icon>perm_contact_calendar</mat-icon>
+              <span>My Profile</span>
+          </button>
+          <button mat-menu-item>
+              <mat-icon>settings</mat-icon>
+              <span>Settings</span>
+          </button>
+          <button mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              <span>Logout</span>
+          </button>
       </mat-menu>
-    </mat-toolbar-row>
-  </mat-toolbar>
-  <div class="wrapper">
-    <div class="frm-login">
-      <mat-card class="login-panel frm-login-panel">
-        <mat-card-header class="frm-login-header">
-          <mat-toolbar class="frm-login-toolbar">
-            Login Form
-          </mat-toolbar>
-        </mat-card-header>
-        
-        <mat-card-content class="frm-login-body">
-        </mat-card-content>
-        <mat-card-actions class="frm-login-actions">
-          <button mat-raised-button class="btn-login">Cancel</button>
-          <button mat-raised-button class="btn-login">Sign In</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="parent" fxLayout="row">
+  <div class="left" fxFlex="20%">
+
+      <div class="header">
+          Choose One:
+      </div>
+      <div class="box">
+          <ul>
+              <li>All Stock</li>
+              <li>Buy Stock</li>
+              <li>Sell Stock</li>
+              <li>Trade Stock</li>
+              <li>Contact Us</li>
+          </ul>
+      </div>
   </div>
+  <div class="right" fxFlex="80%">
+      <div class="header">
+          <input type="text" placeholder="Enter Stock Here" (change)="onChangeEvent($event)" >
+      </div>
+      <div class="box">
+          <app-order [stockSymbol]="stock" [quantity]="numberOfShares"></app-order>
+      </div>
+  </div>
+</div>
