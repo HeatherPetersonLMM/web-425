@@ -1,24 +1,20 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-child',
   template: `
     <div class="child">
-      <h2>Child</h2>
-      <div>Greeting: {{ greeting }}</div>
-      <div>User name: {{ user.name }}</div>
+      <h2>Stock Setting Confirmation</h2>
+      <div>Greeting: {{greeting}}</div>
+      <div>User name: {{user.name}}</div>
     </div>
   `,
-  styles: [`
-    .child {
-      background: lightgray;
-    }
-  `]
+  styles: []
 })
 export class ChildComponent implements OnChanges {
 
   @Input() greeting: string;
-  @Input() user: { name: string };
+  @Input() user: {name: string};
 
   constructor() { }
 
