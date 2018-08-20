@@ -45,14 +45,15 @@
               <li>Trade Stock</li>
               <li>Contact Us</li>
           </ul>
-      </div>
-  </div>
-  <div class="right" fxFlex="80%">
-      <div class="header">
-          <input type="text" placeholder="Enter Stock Here" (change)="onChangeEvent($event)" >
-      </div>
-      <div class="box">
-          <app-order [stockSymbol]="stock" [quantity]="numberOfShares"></app-order>
-      </div>
-  </div>
+        </div>
+    </div>
+    <div class="right" fxFlex="80%">
+        <div class="header">
+            <input type="text" placeholder="Enter Stock Here" (change)="onChangeEvent($event)">
+        </div>
+        <div class="box">
+
+            <app-order [stockSymbol]="stock" [quantity]="numberOfShares"></app-order>
+        </div>
+    </div>
 </div>
