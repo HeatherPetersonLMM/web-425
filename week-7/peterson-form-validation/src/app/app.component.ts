@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'peterson-form-validation';
+  title = 'app';
+
+  onSubmit(formData) {
+    console.log(formData);
+  }
 }
